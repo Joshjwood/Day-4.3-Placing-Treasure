@@ -1,0 +1,1 @@
+#Approximating a treasure map with lists, inputting co-ordinates in a 2-digit format, and representing this by printing the lists with mark included.
