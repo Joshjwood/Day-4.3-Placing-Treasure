@@ -1,16 +1,25 @@
-# This is a sample Python script.
+# 🚨 Don't change the code below 👇
+row1 = ["⬜️","⬜️","⬜️"]
+row2 = ["⬜️","⬜️","⬜️"]
+row3 = ["⬜️","⬜️","⬜️"]
+map = [row1, row2, row3]
+print(f"{row1}\n{row2}\n{row3}")
+position = input("Where do you want to put the treasure? ")
+# 🚨 Don't change the code above 👆
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+#Write your code below this row 👇
+
+horizontal = int(position[0])
+vertical = int(position[1])
+
+print(horizontal)
+print(vertical)
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+selectedrow = map[vertical - 1]
+selectedrow[horizontal - 1] = "X"
 
+#Write your code above this row 👆
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+# 🚨 Don't change the code below 👇
+print(f"{row1}\n{row2}\n{row3}")
